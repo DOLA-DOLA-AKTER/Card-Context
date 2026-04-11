@@ -1,14 +1,15 @@
-import DataProvide from "./Context.jsx"
 import './App.css'
-import Card from './Card'
-import Button from "./Button.jsx"
+import BtnContext from './Context/BtnContext'
+import CardContex from './Context/CardContex'
+import ContextProvider from './Context/Context'
 
 function App() {
+
   return (
-    <DataProvide>
-      <Button />
-      <Card />
-    </DataProvide>
+    <ContextProvider>
+      <BtnContext />
+      <CardContex />
+    </ContextProvider>
   )
 }
 
